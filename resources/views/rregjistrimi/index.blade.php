@@ -16,7 +16,7 @@
         @foreach($personi as $person)
             <article>
                 <h4>
-                    <a href="{{ url('/rregjistrim/edit', $person->id) }}">{{ $person->emer }} {{$person->mbiemer}}</a>
+                    <a href="#">{{ $person->emer }} {{$person->mbiemer}}</a>
                 </h4>
             </article>
             <hr/>

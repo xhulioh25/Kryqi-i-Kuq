@@ -1,4 +1,4 @@
-@excet
+
 @include('errors.list')
 
 <div class="container">
