@@ -21,9 +21,9 @@ class CreateInfosTable extends Migration {
 			$table->integer('programi')->unsigned();
 			$table->boolean('disponimi');
 			$table->integer('gatishmeria')->unsigned();
-			$table->date('koha');
+			$table->date('koha')->nullable();
 			$table->date('rregjistrimi');
-			$table->date('viti_i_fundit');
+			$table->date('viti_i_fundit')->nullable();
 			$table->timestamps();
 		});
 	}
