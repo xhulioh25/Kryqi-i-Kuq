@@ -1,3 +1,4 @@
+@excet
 @include('errors.list')
 
 <div class="container">
@@ -164,13 +165,3 @@
     </div>
 </div>
 
-<script>
-    var selects = document.getElementsByTagName('select');
-    for (i=0; i < selects.length; i++){
-
-        var id = selects[i].id;
-        $("#"+id+"").select2({
-            tags: true
-        });
-    }
-</script>

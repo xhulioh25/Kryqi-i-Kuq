@@ -13,9 +13,19 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('home', 'PersonatController@create');
+Route::get('home', 'HomeController@index');
 
 Route::resource('rregjistrim','PersonatController');
+Route::post('rregjistrim/store','PersonatController@store');
+Route::get('rregjistrim/edit/{id}','PersonatController@edit');
+
+Route::resource('dega','DegaController');
+Route::post('dega/store','DegaController@store');
+Route::get('dega/edit/{id}','DegaController@edit');
+
+Route::resource('programi','ProgramiController');
+Route::post('programi/store','ProgramiController@store');
+Route::get('programi/edit/{id}','ProgramiController@edit');
 
 
 Route::controllers([

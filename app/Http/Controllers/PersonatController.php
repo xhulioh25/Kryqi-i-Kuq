@@ -23,6 +23,10 @@ use Illuminate\Support\Facades\Input;
 
 class PersonatController extends Controller {
 
+	public function __construct()
+	{
+		$this->middleware('auth');
+	}
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -30,7 +34,8 @@ class PersonatController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$personi = Personat::all();
+		return view('rregjistrimi.index', compact('personi'));
 	}
 
 	/**
@@ -134,7 +139,7 @@ class PersonatController extends Controller {
 		$pozicioni = Pozicioni::lists('pozicioni','id');
 		$programi = Programi::lists('programi','id');
 		$gatishmeria = Gatishmeria::lists('gatishmeria','id');
-		return view('rregjistrimi.create',compact('vendlindja','profesioni','gjendja_civile','njohuri_shtese','qendra','pozicioni','programi','gatishmeria','person'));
+		return view('rregjistrimi.edit',compact('vendlindja','profesioni','gjendja_civile','njohuri_shtese','qendra','pozicioni','programi','gatishmeria','person'));
 	}
 
 	/**

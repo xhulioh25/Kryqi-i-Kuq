@@ -1,3 +1,6 @@
+@extends('app')
+
+@section('content')
 <h1>Shto Nje Program</h1>
 
 <hr/>
@@ -7,4 +10,4 @@
 
 {!! Form::close() !!}
 
-@include('errors.list')
+@endsection

@@ -7,6 +7,12 @@ class Dega extends Model {
 	//
     protected $table = "dega";
 
+    protected $fillable = [
+        'dega',
+        'varet_nga',
+        'qyteti'
+    ];
+
     public function nenDega(){
         return $this->hasMany('App\Dega');
     }
