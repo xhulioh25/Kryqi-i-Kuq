@@ -137,6 +137,8 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Html\HtmlServiceProvider',
 		'Zizaco\Entrust\EntrustServiceProvider',
+		'Laracasts\Flash\FlashServiceProvider',
+
 
 		/*
 		 * Application Service Providers...
@@ -197,6 +199,8 @@ return [
 		'Form'		=> 'Illuminate\Html\FormFacade',
 		'HTML'		=> 'Illuminate\Html\HtmlFacade',
 		'Entrust' 	=> 'Zizaco\Entrust\EntrustFacade',
+		'Flash'     => 'Laracasts\Flash\Flash',
+
 
 	],
 

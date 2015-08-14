@@ -32,3 +32,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('register/verify/{confirmationCode}', [
+	'as' => 'confirmation_path',
+	'uses' => 'RegistrationController@confirm'
+]);
